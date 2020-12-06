@@ -1,4 +1,4 @@
-# ColabCode
+# ImCode
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![PyPI version](https://badge.fury.io/py/imcode.svg)](https://badge.fury.io/py/imcode)

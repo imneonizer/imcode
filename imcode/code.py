@@ -13,7 +13,7 @@ except ImportError: pass
 EXTENSIONS = ["ms-python.python", "ms-toolsai.jupyter"]
 
 class ImCode:
-    def __init__(self, port=10000, password=None, authtoken=None, mount_drive=False):
+    def __init__(self, port=6000, password=None, authtoken=None, mount_drive=False):
         self.port = port
         self.password = password
         self.authtoken = authtoken
