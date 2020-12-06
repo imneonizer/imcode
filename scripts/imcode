@@ -1,11 +1,15 @@
 #! /usr/bin/env python
 
+import os, sys
+sys.path.append(os.path.dirname( \
+os.path.dirname(os.path.realpath(__file__))))
+
 import argparse
-from colabcode import ColabCode
+from imcode import ImCode
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="ColabCode: Run VS Code On Colab / Kaggle Notebooks"
+        description="ImCode: Run VS Code On Colab / Kaggle Notebooks"
     )
     parser._action_groups.pop()
     required = parser.add_argument_group("required arguments")
@@ -31,4 +35,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    ColabCode(port=args.port, password=args.password, mount_drive=args.mount_drive)
+    ImCode(port=args.port, password=args.password, mount_drive=args.mount_drive)

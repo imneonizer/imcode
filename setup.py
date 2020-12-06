@@ -4,18 +4,17 @@ from setuptools import find_packages
 with open("README.md") as f:
     long_description = f.read()
 
-
 if __name__ == "__main__":
     setup(
-        name="colabcode",
-        scripts=["scripts/colabcode"],
+        name="imcode",
+        scripts=["scripts/imcode"],
         version="0.1.0",
-        description="ColabCode - Run codeserver on Colab!",
+        description="ImCode - Run codeserver on Colab!",
         long_description=long_description,
         long_description_content_type="text/markdown",
-        author="Abhishek Thakur",
-        author_email="abhishek4@gmail.com",
-        url="https://github.com/abhishekkrthakur/colabcode",
+        author="Nitin Rai",
+        author_email="mneonizer@gmail.com",
+        url="https://github.com/imneonizer/imcode",
         license="MIT License",
         packages=find_packages(),
         include_package_data=True,
