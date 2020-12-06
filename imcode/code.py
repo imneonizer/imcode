@@ -39,7 +39,7 @@ class ImCode:
 
         if self.installed:
             try:
-                p = sp.run(["code", "--list-extensions"], stdout=sp.PIPE)
+                p = sp.run(["code-server", "--list-extensions"], stdout=sp.PIPE)
                 self.installed_extensions = p.stdout.decode("utf-8").split()
             except: pass
 
@@ -47,7 +47,7 @@ class ImCode:
         if not self.installed:
             self.log("installing code-server")
             try:
-                script = urlopen(Request('httpsa://code-server.dev/install.sh', headers={'User-Agent': 'Mozilla/5.0'})).read().decode('utf-8')
+                script = urlopen(Request('https://code-server.dev/install.sh', headers={'User-Agent': 'Mozilla/5.0'})).read().decode('utf-8')
                 sp.run(["sh","-c", script], stdout=sp.PIPE)
             except Exception as e:
                 self.log("unable to install code-server: {}".format(e), level="error")
