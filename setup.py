@@ -8,7 +8,7 @@ if __name__ == "__main__":
     setup(
         name="imcode",
         scripts=["scripts/imcode"],
-        version="0.1.0",
+        version="0.1.1",
         description="ImCode - Run codeserver on Colab!",
         long_description=long_description,
         long_description_content_type="text/markdown",
